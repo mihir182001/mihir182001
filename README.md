@@ -7,7 +7,7 @@ Building production AI systems — evaluation frameworks, LLM pipelines, and end
 
 ## Featured Projects
 
-### 🔬 [Prompt Eval Framework](https://github.com/mihir182001/prompt-eval-framework)
+### 🔬 [Prompt Evaluation Testing Framework](https://github.com/mihir182001/prompt-mutation-tester)
 An autonomous LLM evaluation system that generates adversarial prompt variants across 10 mutation strategies, scores outputs using an LLM-as-judge layer, and self-optimises fragile prompts from **43.6 → 100/100 in 2 iterations** without human intervention.
 
 - Adaptive agent selects mutation strategies based on prior failure patterns
@@ -19,7 +19,7 @@ An autonomous LLM evaluation system that generates adversarial prompt variants a
 
 ---
 
-### 🎙️ [MeetIQ](https://github.com/mihir182001/meetiq)
+### 🎙️ [Multimodel Meeting Intelligence System](https://github.com/mihir182001/Multimodal-Meeting-Intelligence-with-NLP-RAG-Transformer-Models)
 End-to-end multimodal meeting intelligence platform processing audio through a 15-feature pipeline — real-time transcription, speaker diarisation, NLP analytics, RAG-powered Q&A, and meeting quality scoring across 5 dimensions.
 
 - Fine-tuned **DistilBERT** from scratch for action item classification → **F1: 0.83**
@@ -44,7 +44,7 @@ Production-grade REST API managing structured workflows across users, job applic
 
 ---
 
-### 🧠 [Medical Imaging CV](https://github.com/mihir182001/medical-imaging-cv)
+### 🧠 [AI Medical Imaging Assistant](https://github.com/mihir182001/AI-Medical-Imaging-Assistant)
 End-to-end computer vision system classifying 6,400+ brain MRI scans across four diagnostic categories — **96% precision** for No Tumour, **93% F1** for Pituitary Tumour.
 
 - EfficientNetB0 with transfer learning and systematic failure-mode analysis
