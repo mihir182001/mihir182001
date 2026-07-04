@@ -1,6 +1,6 @@
 # Mihir Barve
 
-**MSc Data Analytics @ Queen Mary London**  
+**MSc Data Analytics @ Queen Mary University of London**  
 Building production AI systems, evaluation frameworks, LLM pipelines, and end-to-end ML applications that ship.
 
 ---
