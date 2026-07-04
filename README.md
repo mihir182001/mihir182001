@@ -1,7 +1,7 @@
 # Mihir Barve
 
 **MSc Data Analytics @ Queen Mary London**  
-Building production AI systems — evaluation frameworks, LLM pipelines, and end-to-end ML applications that ship.
+Building production AI systems, evaluation frameworks, LLM pipelines, and end-to-end ML applications that ship.
 
 ---
 
