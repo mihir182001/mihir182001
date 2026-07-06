@@ -78,5 +78,5 @@ Tooling        Git · Jupyter · Streamlit · Flask · Plotly · Swagger UI · C
 
 ## Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-mihirbarve-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/mihir-barve-232930257/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-https://www.linkedin.com/in/mihir-barve-232930257/?style=flat&logo=linkedin)](https://www.linkedin.com/in/mihir-barve-232930257/)
 [![Email](https://img.shields.io/badge/Email-mihirbarve18@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:mihirbarve18@gmail.com)
