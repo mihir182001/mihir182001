@@ -14,7 +14,6 @@ including the failures.
 | Domain | Projects |
 |--------|----------|
 | Search & Retrieval | SearchLens |
-| Forecasting | DemandLens, COVID-19 Forecasting |
 | Credit & Fraud Risk | FraudLens|
 | Agentic AI | Client-based Dissertation |
 | RAG & LLMs | DocLens, Prompt Mutation |
