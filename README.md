@@ -13,14 +13,13 @@ including the failures.
 
 | Domain | Projects |
 |--------|----------|
-| 🔍 Search & Retrieval | SearchLens |
-| 📈 Forecasting | DemandLens, COVID-19 Forecasting |
-| 🏦 Credit & Fraud Risk | FraudLens, DecisionLens, CitiLens |
-| 🤖 Agentic AI | AgentForge, BankAgent, Dissertation |
-| 📄 RAG & LLMs | DocLens, FinLens, Prompt Mutation |
-| 📊 Analytics Engineering | SupplyLens, ABTestLab, PlayerLens |
-| 🏥 Clinical & Insurance | ClinicalLens, InsureLens |
-| 🧠 LLM Fine-Tuning | FineTuneLens, ConsultLens |
+| Search & Retrieval | SearchLens |
+| Forecasting | DemandLens, COVID-19 Forecasting |
+| Credit & Fraud Risk | FraudLens|
+| Agentic AI | Client-based Dissertation |
+| RAG & LLMs | DocLens, Prompt Mutation |
+| Analytics Engineering | SupplyLens, ABTestLab|
+
 
 ## Featured Projects
 
