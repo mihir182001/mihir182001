@@ -19,6 +19,7 @@ including the failures.
 | Agentic AI | Client-based Dissertation |
 | RAG & LLMs | DocLens, Prompt Mutation |
 | Analytics Engineering | SupplyLens, ABTestLab|
+| AI Safety & Evaluation | AgentGuard, Prompt Mutation, RolloutGuard |
 
 
 ## Featured Projects
@@ -94,6 +95,28 @@ dbt model            Staging and mart layers with data quality tests
 ```
 
 `BigQuery` `dbt` `PySpark` `Python` `Looker Studio` `Claude API`
+
+### 🛡️ [AgentGuard](https://github.com/mihir182001/agentguard)
+**AI Agent Evaluation and Safety Framework**
+
+Built an evaluation framework for testing whether AI agents follow
+retrieved policies, produce valid evidence, execute authorised tools,
+and escalate uncertain or unsafe actions. Uses Qwen2.5-3B-Instruct,
+LangGraph, and FAISS to create controlled agent workflows and
+structured evaluation scenarios.
+
+```
+Evaluation scenarios     1,700 synthetic cases
+Held-out evaluation      175 cases
+Overall held-out result  100% across 5 evaluation criteria
+Adversarial API tests    20 cases
+Policy retrieval         FAISS-based retrieval
+Action validation        Guard and Executor architecture
+Structured outputs       Schema-validated agent responses
+```
+
+`Python` `Qwen2.5-3B-Instruct` `LangGraph` `FAISS` `FastAPI`
+`Docker` `Structured Outputs` `AI Evaluation`
 
 
 ### 📄 [Prompt Mutation](https://github.com/mihir182001/prompt-mutation-tester)
