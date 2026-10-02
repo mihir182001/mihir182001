@@ -24,7 +24,7 @@ including the failures.
 
 ## Featured Projects
 
-### 🔍 [SearchLens](https://github.com/mihir182001/searchlens)
+### [SearchLens](https://github.com/mihir182001/searchlens)
 **Neural Information Retrieval and Ranking Platform**
 
 Built over 11 weeks. Implements BM25, dense bi-encoder retrieval,
@@ -47,7 +47,7 @@ Requirements drift   Caught by from-scratch Docker build — split into two file
 `Python` `PyTorch` `FAISS` `sentence-transformers` `FastAPI`
 `Docker` `GitHub Actions`
 
-### 🏦 [FraudLens](https://github.com/mihir182001/fraudlens)
+### [FraudLens](https://github.com/mihir182001/fraudlens)
 **End-to-End Fraud Detection and Credit Risk Scoring Platform**
 
 Built on two real Kaggle datasets 590,540 IEEE-CIS transactions
@@ -70,7 +70,7 @@ Live demo                      Deployed on Render via Docker Blueprint
 `GitHub Actions` `Streamlit`
 
 
-### 📊 [ABTestLab](https://github.com/mihir182001/ABTest-Lab)
+### [ABTestLab](https://github.com/mihir182001/ABTest-Lab)
 **Statistical Experimentation Framework**
 
 Frequentist and Bayesian experimentation engines.
@@ -80,7 +80,7 @@ to approximately 4%. Validated across 500+ simulated experiments.
 
 `Python` `FastAPI` `Streamlit` `Docker` `GitHub Actions`
 
-### 📊 [SupplyLens](https://github.com/mihir182001/supplylens)
+### [SupplyLens](https://github.com/mihir182001/supplylens)
 **Supply Chain Analytics and dbt Data Platform**
 
 1.5M+ real e-commerce records. dbt semantic model on
@@ -96,7 +96,7 @@ dbt model            Staging and mart layers with data quality tests
 
 `BigQuery` `dbt` `PySpark` `Python` `Looker Studio` `Claude API`
 
-### 🛡️ [AgentGuard](https://github.com/mihir182001/agentguard)
+### [AgentGuard](https://github.com/mihir182001/agentguard)
 **AI Agent Evaluation and Safety Framework**
 
 Built an evaluation framework for testing whether AI agents follow
@@ -119,7 +119,7 @@ Structured outputs       Schema-validated agent responses
 `Docker` `Structured Outputs` `AI Evaluation`
 
 
-### 📄 [Prompt Mutation](https://github.com/mihir182001/prompt-mutation-tester)
+### [Prompt Mutation](https://github.com/mihir182001/prompt-mutation-tester)
 **Responsible AI Evaluation Framework** · [Live Demo](https://prompt-mutation-tester.onrender.com)
 
 Autonomous adversarial evaluation framework.
@@ -130,7 +130,7 @@ two iterations. Real-time latency and cost monitoring.
 `Python` `Groq API` `Claude API` `FastAPI` `Render`
 
 
-### 📄 [RolloutGuard](https://github.com/mihir182001/rolloutguard)
+### [RolloutGuard](https://github.com/mihir182001/rolloutguard)
 **Production ML System with Empirical Validation**
 
 Cox Proportional Hazards, XGBoost with conformal prediction,
