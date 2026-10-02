@@ -1,74 +1,183 @@
+
 # Mihir Barve
 
-**MSc Data Analytics @ Queen Mary University of London**  
-Building production AI systems, evaluation frameworks, LLM pipelines, and end-to-end ML applications that ship.
+**MSc Data Analytics** · Queen Mary University of London · 2025–2026
 
----
+Data Analyst building production systems across
+information retrieval, neural forecasting, credit risk analytics,
+agentic AI, and LLM evaluation. Every project here was built
+from scratch, evaluated rigorously, and documented honestly
+including the failures.
+
+## What I Build
+
+| Domain | Projects |
+|--------|----------|
+| 🔍 Search & Retrieval | SearchLens |
+| 📈 Forecasting | DemandLens, COVID-19 Forecasting |
+| 🏦 Credit & Fraud Risk | FraudLens, DecisionLens, CitiLens |
+| 🤖 Agentic AI | AgentForge, BankAgent, Dissertation |
+| 📄 RAG & LLMs | DocLens, FinLens, Prompt Mutation |
+| 📊 Analytics Engineering | SupplyLens, ABTestLab, PlayerLens |
+| 🏥 Clinical & Insurance | ClinicalLens, InsureLens |
+| 🧠 LLM Fine-Tuning | FineTuneLens, ConsultLens |
 
 ## Featured Projects
 
-###  [Prompt Evaluation Testing Framework](https://github.com/mihir182001/prompt-mutation-tester)
-An autonomous LLM evaluation system that generates adversarial prompt variants across 10 mutation strategies, scores outputs using an LLM-as-judge layer, and self-optimises fragile prompts from **43.6 → 100/100 in 2 iterations** without human intervention.
+### 🔍 [SearchLens](https://github.com/mihir182001/searchlens)
+**Neural Information Retrieval and Ranking Platform**
 
-- Adaptive agent selects mutation strategies based on prior failure patterns
-- Multi-model comparison, RAG prompt testing, latency and cost tracking per API call
-- Production dashboard with analytics, batch testing, history tracking, PDF/CSV export
-- **Live:** [prompt-mutation-tester.onrender.com](https://prompt-mutation-tester.onrender.com)
-
-`Python` `Groq API` `LangChain` `RAG` `LLM Evaluation` `Flask` `Render`
-
----
-
-###  [Multimodel Meeting Intelligence System](https://github.com/mihir182001/Multimodal-Meeting-Intelligence-with-NLP-RAG-Transformer-Models)
-End-to-end multimodal meeting intelligence platform processing audio through a 15-feature pipeline — real-time transcription, speaker diarisation, NLP analytics, RAG-powered Q&A, and meeting quality scoring across 5 dimensions.
-
-- Fine-tuned **DistilBERT** from scratch for action item classification → **F1: 0.83**
-- Completion risk predictor with cross-validation **F1: 0.93** using 8 engineered NLP features
-- FAISS vector search + sentence-transformers for RAG Q&A
-- Real speaker diarisation using MFCC embeddings + agglomerative clustering
-- CI/CD pipeline with automated F1 quality gates — **build fails if F1 drops below 70%**
-- Zero paid APIs for any ML component
-
-`Python` `DistilBERT` `FAISS` `WebRTC` `Groq Whisper` `Docker` `GitHub Actions`
-
----
-
-###  [Job Tracker API](https://github.com/mihir182001/Job-Tracker)
-Production-grade REST API managing structured workflows across users, job applications, interviews, and scheduling — deployed with Docker, CI/CD, and automated quality validation.
-
-- FastAPI + SQLAlchemy ORM + JWT authentication + Alembic migrations
-- Pytest + FastAPI TestClient covering edge cases and performance monitoring
-- Swagger UI documentation for efficient API testing
-
-`Python` `FastAPI` `SQLAlchemy` `Docker` `GitHub Actions` `Pytest` `Render`
-
----
-
-###  [AI Medical Imaging Assistant](https://github.com/mihir182001/AI-Medical-Imaging-Assistant)
-End-to-end computer vision system classifying 6,400+ brain MRI scans across four diagnostic categories — **96% precision** for No Tumour, **93% F1** for Pituitary Tumour.
-
-- EfficientNetB0 with transfer learning and systematic failure-mode analysis
-- Grad-CAM explainability to make model decisions auditable and interpretable
-- Deployed as a live Streamlit application
-
-`Python` `TensorFlow` `EfficientNetB0` `Grad-CAM` `OpenCV` `Streamlit`
-
----
-
-## Technical Skills
+Built over 11 weeks. Implements BM25, dense bi-encoder retrieval,
+cross-encoder reranking, and hybrid Reciprocal Rank Fusion — then
+reversed the hybrid routing decision after a paired bootstrap
+significance test (p=0.0039, 95% CI [−0.0252, −0.0052]) confirmed
+dense-only outperforms hybrid on this corpus.
 
 ```
-Languages      Python (OOP, SOLID, production) · SQL · JavaScript (basic)
-AI & LLMs      LLM Evaluation · LLM-as-judge · Prompt Engineering · RAG · LangChain · Groq API · Anthropic Claude
-ML & DL        PyTorch · TensorFlow · Keras · DistilBERT · FAISS · LSTMs · Transformers · Scikit-learn · XGBoost
-Data           Pandas · NumPy · EDA · Feature Engineering · Time Series · ARIMA
-DevOps         Docker · GitHub Actions CI/CD · Automated Quality Gates · Render
-Tooling        Git · Jupyter · Streamlit · Flask · Plotly · Swagger UI · Copilot · Cursor
+BM25 baseline        MRR@10: 0.7238
+Cross-encoder rerank MRR@10: 0.8977  (+24%)
+Recall@50            0.9250
+Dense retrieval      MRR@10: 0.9130
+Hybrid RRF           MRR@10: 0.8980  (worse than dense — reversed by evidence)
+RAG faithfulness     98% over 100 real queries
+Production bug       Low-confidence threshold caught by live query after shipping
+Requirements drift   Caught by from-scratch Docker build — split into two files
 ```
 
----
+`Python` `PyTorch` `FAISS` `sentence-transformers` `FastAPI`
+`Docker` `GitHub Actions`
+
+### 🏦 [FraudLens](https://github.com/mihir182001/fraudlens)
+**End-to-End Fraud Detection and Credit Risk Scoring Platform**
+
+Built on two real Kaggle datasets 590,540 IEEE-CIS transactions
+and 307K Home Credit loan applications covering the full ML
+lifecycle from point-in-time-correct feature engineering through
+production serving, monitoring, and advanced research modules.
+
+```
+XGBoost fraud classifier       AUC-ROC: 0.8875   Gini: 0.77
+WoE credit scorecard           AUC-ROC: 0.7374
+Active learning                Full AUC-PR with only 5.6% of labels
+GraphSAGE fraud ring detection Relational fraud signal detection
+Uplift modelling               S/T-Learner evaluated via Qini coefficient
+Transfer learning              Across simulated domain shift
+CI/CD test suite               306 automated tests on every push
+Live demo                      Deployed on Render via Docker Blueprint
+```
+
+`Python` `XGBoost` `GraphSAGE` `FastAPI` `MLflow` `Docker`
+`GitHub Actions` `Streamlit`
+
+
+### 📊 [ABTestLab](https://github.com/mihir182001/ABTest-Lab)
+**Statistical Experimentation Framework**
+
+Frequentist and Bayesian experimentation engines.
+Empirically demonstrated the peeking problem — false positive
+rates from 5% to 20.7% and fixed with Bonferroni correction
+to approximately 4%. Validated across 500+ simulated experiments.
+
+`Python` `FastAPI` `Streamlit` `Docker` `GitHub Actions`
+
+### 📊 [SupplyLens](https://github.com/mihir182001/supplylens)
+**Supply Chain Analytics and dbt Data Platform**
+
+1.5M+ real e-commerce records. dbt semantic model on
+Google BigQuery. Regression, Isolation Forest anomaly
+detection, Looker Studio dashboard, Claude API insights.
+
+```
+Regression MAE       6.70
+Anomalies flagged    3,303  (3.0% of volume)
+Outlier finding      167-day average delay from a single seller
+dbt model            Staging and mart layers with data quality tests
+```
+
+`BigQuery` `dbt` `PySpark` `Python` `Looker Studio` `Claude API`
+
+
+### 📄 [Prompt Mutation](https://github.com/mihir182001/prompt-mutation-tester)
+**Responsible AI Evaluation Framework** · [Live Demo](https://prompt-mutation-tester.onrender.com)
+
+Autonomous adversarial evaluation framework.
+LLM-as-judge scoring across 10 mutation strategies.
+Improved model robustness from 43.6/100 to 100/100 in
+two iterations. Real-time latency and cost monitoring.
+
+`Python` `Groq API` `Claude API` `FastAPI` `Render`
+
+
+### 📄 [RolloutGuard](https://github.com/mihir182001/rolloutguard)
+**Production ML System with Empirical Validation**
+
+Cox Proportional Hazards, XGBoost with conformal prediction,
+Thompson Sampling multi-armed bandit. All empirically validated
+against known ground truth with documented design failures.
+
+```
+Cox PH concordance   0.842
+XGBoost AUC          >0.85 with conformal prediction intervals
+Thompson Sampling    150x lower regret vs uniform random
+pytest suite         49 tests across 9 modules
+Production bug       Discovered and fixed during containerisation
+```
+
+`Python` `XGBoost` `FastAPI` `Docker` `GitHub Actions`
+
+## Skills
+
+```python
+languages   = ["Python", "R", "SQL"]
+ml          = ["PyTorch", "TensorFlow", "Scikit-learn", "XGBoost",
+               "Hugging Face", "sentence-transformers"]
+llm         = ["Claude API", "LangChain", "LangGraph", "RAG",
+               "FAISS", "QLoRA", "PEFT", "MCP"]
+forecasting = ["NeuralForecast", "N-BEATS", "N-HiTS", "TFT",
+               "DeepAR", "ARIMA", "LSTM"]
+data        = ["PySpark", "BigQuery", "dbt", "Snowflake",
+               "PostgreSQL", "Databricks"]
+mlops       = ["Docker", "GitHub Actions", "MLflow",
+               "FastAPI", "pytest", "AWS", "GCP", "Azure"]
+tools       = ["Cursor (daily)", "Claude Code (daily)",
+               "GitHub Copilot"]
+```
+
+## Education
+
+**MSc Data Analytics** — Queen Mary University of London
+`Sep 2025 – Sep 2026`
+
+Modules: Programming in Python · Advanced Machine Learning ·
+Probability and Statistics · Computational Statistics with R ·
+Neural Networks and Deep Learning · Machine Learning with Python
+
+Dissertation: *Client-Based Multi-Agent OSINT Intelligence Platform*
+— production three-agent system for a real client using
+NVIDIA Nemotron and Anthropic Claude
+
+## Publication
+
+**Semantic Segmentation of Retinal Arteries and Veins**
+ISTE Journal · Vol. 47, Special Issue No. 1 · June 2024
+
+## Certifications and Achievements
+
+Data Analytics Certification — ETLHive (2024)
+
+Data Science Certification — Acmegrade (2024)
+
+QHack Hackathon — First Place · Queen Mary University of London
+
+STEM Ambassador — Working with school students to make
+technical concepts accessible (2024 – Present)
 
 
 
+## Contact
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mihir_Barve-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/mihir-barve-232930257/)
+[![Email](https://img.shields.io/badge/Email-mihirbarve@email.com-red?style=flat&logo=gmail)](mailto:mihirbarve18@email.com)
 
+*All projects built from scratch. All numbers from actual evaluation
+runs. All failures documented alongside successes.*
