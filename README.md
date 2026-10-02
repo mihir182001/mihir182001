@@ -199,7 +199,7 @@ technical concepts accessible (2024 – Present)
 ## Contact
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Mihir_Barve-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/mihir-barve-232930257/)
-[![Email](https://img.shields.io/badge/Email-mihirbarve@email.com-red?style=flat&logo=gmail)](mailto:mihirbarve18@email.com)
+[![Email](https://img.shields.io/badge/Email-mihirbarve18@email.com-red?style=flat&logo=gmail)](mailto:mihirbarve18@email.com)
 
 *All projects built from scratch. All numbers from actual evaluation
 runs. All failures documented alongside successes.*
