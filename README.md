@@ -19,6 +19,7 @@ including the failures.
 | RAG & LLMs | DocLens, Prompt Mutation |
 | Analytics Engineering | SupplyLens, ABTestLab|
 | AI Safety & Evaluation | AgentGuard, Prompt Mutation, RolloutGuard |
+| Backend Engineering | Job Tracker API|
 
 
 ## Featured Projects
@@ -45,6 +46,25 @@ Requirements drift   Caught by from-scratch Docker build — split into two file
 
 `Python` `PyTorch` `FAISS` `sentence-transformers` `FastAPI`
 `Docker` `GitHub Actions`
+
+
+### [Job Tracker API](https://github.com/mihir182001/Job-Tracker)
+**Production REST API with Authentication and CI/CD**
+
+A production-ready job application tracking API built with **FastAPI, PostgreSQL, and SQLAlchemy**. The project provides secure authentication, structured CRUD operations, database integration, automated testing, API documentation, and containerised deployment, with a focus on clean backend architecture and maintainable code.
+
+```text
+Authentication      JWT-based authentication and secure token handling
+Database            PostgreSQL with SQLAlchemy ORM
+API                 RESTful CRUD endpoints for jobs, companies and applications
+Validation          Pydantic schemas and request validation
+Documentation       Swagger UI / OpenAPI
+Testing             pytest with automated quality checks
+Deployment          Docker + Render
+CI/CD               GitHub Actions
+Architecture        Modular routes, schemas, models and services
+
+
 
 ### [FraudLens](https://github.com/mihir182001/fraudlens)
 **End-to-End Fraud Detection and Credit Risk Scoring Platform**
