@@ -187,7 +187,7 @@ data        = ["PySpark", "BigQuery", "dbt", "Snowflake",
                "PostgreSQL", "Databricks"]
 mlops       = ["Docker", "GitHub Actions", "MLflow",
                "FastAPI", "pytest", "AWS", "GCP", "Azure"]
-tools       = ["Cursor (daily)", "Claude Code (daily)",
+tools       = ["Cursor", "Claude Code",
                "GitHub Copilot"]
 ```
 
