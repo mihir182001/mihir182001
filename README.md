@@ -48,12 +48,16 @@ Requirements drift   Caught by from-scratch Docker build — split into two file
 `Docker` `GitHub Actions`
 
 
-### [Job Tracker API](https://github.com/mihir182001/Job-Tracker)
+### ⚙️ [Job Tracker API](https://github.com/mihir182001/Job-Tracker)
 **Production REST API with Authentication and CI/CD**
 
-A production-ready job application tracking API built with **FastAPI, PostgreSQL, and SQLAlchemy**. The project provides secure authentication, structured CRUD operations, database integration, automated testing, API documentation, and containerised deployment, with a focus on clean backend architecture and maintainable code.
+A production-ready job application tracking API built with **FastAPI,
+PostgreSQL, and SQLAlchemy**. The project provides secure authentication,
+structured CRUD operations, database integration, automated testing,
+API documentation, and containerised deployment, with a focus on clean
+backend architecture and maintainable code.
 
-```text
+```
 Authentication      JWT-based authentication and secure token handling
 Database            PostgreSQL with SQLAlchemy ORM
 API                 RESTful CRUD endpoints for jobs, companies and applications
@@ -63,7 +67,10 @@ Testing             pytest with automated quality checks
 Deployment          Docker + Render
 CI/CD               GitHub Actions
 Architecture        Modular routes, schemas, models and services
+```
 
+`Python` `FastAPI` `PostgreSQL` `SQLAlchemy` `JWT` `Docker`
+`GitHub Actions` `pytest` `Swagger UI` `Render`
 
 
 ### [FraudLens](https://github.com/mihir182001/fraudlens)
