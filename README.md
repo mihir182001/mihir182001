@@ -100,7 +100,7 @@ Live demo                      Deployed on Render via Docker Blueprint
 **Statistical Experimentation Framework**
 
 Frequentist and Bayesian experimentation engines.
-Empirically demonstrated the peeking problem — false positive
+Empirically demonstrated the peeking problem false positive
 rates from 5% to 20.7% and fixed with Bonferroni correction
 to approximately 4%. Validated across 500+ simulated experiments.
 
