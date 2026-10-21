@@ -149,15 +149,15 @@ languages   = ["Python", "SQL", "R"]
 ml          = ["PyTorch", "TensorFlow", "Scikit-learn", "XGBoost", "LightGBM",
                "Hugging Face", "sentence-transformers"]
 llm         = ["Claude API", "Groq API", "LangChain", "LangGraph", "RAG",
-               "FAISS", "ChromaDB", "QLoRA", "PEFT", "MCP"]
+               "FAISS", "ChromaDB", "QLoRA", "PEFT"]
 forecasting = ["NeuralForecast", "N-BEATS", "N-HiTS", "TFT",
                "DeepAR", "ARIMA", "LSTM"]
 statistics  = ["A/B testing", "Bayesian inference", "Survival analysis",
                "Conformal prediction"]
 data        = ["PySpark", "BigQuery", "dbt", "Snowflake",
-               "PostgreSQL", "Databricks"]
+               "PostgreSQL", "GCP"]
 mlops       = ["Docker", "GitHub Actions", "MLflow",
-               "FastAPI", "pytest", "AWS", "GCP", "Azure"]
+               "FastAPI", "pytest", "Git"]
 bi          = ["Power BI", "Tableau", "Looker Studio", "Excel"]
 tools       = ["Cursor", "Claude Code", "GitHub Copilot"]
 ```
