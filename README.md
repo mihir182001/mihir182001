@@ -2,7 +2,7 @@
 
 # Mihir Barve
 
-### AI Engineer & Data Scientist · LLMs, RAG & Agentic AI · Python, SQL & Machine Learning
+### AI Engineer  · LLMs, RAG & Agentic AI · Python, SQL & Machine Learning
 
 **MSc Data Analytics · Queen Mary University of London**
 
