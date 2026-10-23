@@ -26,6 +26,7 @@ I build AI and data systems, then test them until the numbers prove they work. E
 | [AI Agent Evaluation and Safety Framework](#ai-agent-evaluation-and-safety-framework) | Agentic AI, guardrails, evaluation | 100% across 5 criteria on 175 held-out cases |
 | [Neural Information Retrieval and Ranking Platform](#neural-information-retrieval-and-ranking-platform) | Search, RAG, significance testing | MRR@10 0.913 (BM25 baseline 0.724) |
 | [Credit and Fraud Risk Modelling](#credit-and-fraud-risk-modelling) | ML for risk, MLOps | AUC-ROC 0.8875, Gini 0.77 |
+| [Malicious URL Detection and Abuse Trend Analytics](#malicious-url-detection-and-abuse-trend-analytics) | Trust & Safety ML, SQL warehouse, automation | 98.1% recall at 0.69% false positives |
 | [Prompt Mutation and LLM Evaluation Framework](#prompt-mutation-and-llm-evaluation-framework) | LLM-as-judge, robustness testing | Prompt score 43.6 → 100 in 2 iterations |
 | [A/B Testing and Experimentation Platform](#ab-testing-and-experimentation-platform) | Statistics, experimentation | False positives 20.7% → ~4% |
 | [Data Pipeline, Regression and Anomaly Detection](#data-pipeline-regression-and-anomaly-detection) | SQL, dbt, BigQuery, BI | 3,303 anomalies in 1.5M+ rows |
@@ -77,6 +78,23 @@ Research modules           GraphSAGE fraud rings, uplift modelling
 Test suite                 306 automated tests in CI
 ```
 `Python` `SQL` `XGBoost` `GraphSAGE` `MLflow` `FastAPI` `Docker`
+
+### Malicious URL Detection and Abuse Trend Analytics
+**Repo:** [abuselens](https://github.com/mihir182001/abuselens)
+
+A pipeline that runs itself every day on GitHub Actions. It collects real malicious URLs from live abuse feeds (URLhaus, OpenPhish), samples safe URLs from real Tranco sites, validates every feed with quality gates and loads daily snapshots into a DuckDB warehouse. SQL marts track trends, targeted hosts, campaigns and takedown times, and a calibrated XGBoost model scores URLs through a FastAPI endpoint.
+
+```
+Data window                 21 Sep - 22 Oct 2026, 49K+ real URLs
+Detector                    98.1% recall at 0.69% false positives
+Precision at 1% prevalence  58.8% (re-weighted for real-world rarity)
+Validation                  time-based, per abuse type, host-disjoint
+Malware lifetime            median 301 hours (Kaplan-Meier, censored data)
+Finding                     ~40% of malware URLs hosted on GitHub alone
+Monitoring                  PSI drift, weekly decay, champion/challenger retrain
+Test suite                  48 tests in CI
+```
+`Python` `SQL` `DuckDB` `XGBoost` `lifelines` `FastAPI` `Streamlit` `GitHub Actions` `Docker`
 
 ### Prompt Mutation and LLM Evaluation Framework
 **Repo:** [prompt-mutation-tester](https://github.com/mihir182001/prompt-mutation-tester) · [Live demo](https://prompt-mutation-tester.onrender.com)
